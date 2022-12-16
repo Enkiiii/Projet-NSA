@@ -20,10 +20,10 @@ Installer OpenBSD 7.2 sur la VM1, et FreeBSD 13.1 sur la VM2, choix libre pour l
 ## VMs Configuration
 
 ```
-gateway		    > 1 Bridge + 3 Internal Network ( lan-1,2,3 )
-server		    > 1 Internal Network ( lan-2 )
-admin-client	> 1 Internal Network ( lan-1 )
-employee-client	> 1 Internal Network ( lan-3 )
+gateway		        > 1 Bridge + 3 Internal Network ( lan-1,2,3 )
+server		        > 1 Internal Network ( lan-2 )
+admin-client	    > 1 Internal Network ( lan-1 )
+employee-client	    > 1 Internal Network ( lan-3 )
 ```
 
 
@@ -181,7 +181,8 @@ Mysql :
 			or 
 	echo 'mysql_enable="YES"' >> /etc/rc.conf
 	    ---> /usr/local/etc/rc.d/mysql start
-Fichier rc.conf
+
+##### Fichier rc.conf
 ![fichier rc.conf](/Screen%20Projet%20R%C3%A9seau/Enable.png)
 
 ## Configuration php-fpm
