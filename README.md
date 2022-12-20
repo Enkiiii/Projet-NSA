@@ -1,7 +1,7 @@
 
 # Networks and Systems Admin.
 
-Petite description du projet 
+Projet consistant à créer un réseau virtualisé comprenant 4 machines dont un routeur / pare-feu / serveur DHCP et un serveur Web.
 
 
 ## Tech
