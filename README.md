@@ -217,6 +217,19 @@ Mysql :
 
 ## MySQL Configuration
 
+	a. Import file nsa501.sql on the server ( via scp for exemple with a temporary bridge network adaptater ) 
+	
+	b. You have to configure mysql with the command mysql_secure_installation ( you can leave blank password for the root )
+	
+	c. Dump the data.sql file inside nsa501 database : 
+		> mysql -u root
+		> CREATE DATABASE nsa501;
+		> exit
+		> mysql -u root nsa501 < /path_to_file/nsa501.sql
+	
+	d. Reconnect to database and create backend user :
+		> GRANT ALL PRIVILEGES ON nsa501.* TO 'backend'@'localhost' IDENTIFIED BY 'Bit8Q6a6' WITH GRANT OPTION; ( create user with all right on nsa501 )
+		
 
 ## Nginx Web Server Configuration
 ##### *file location : /usr/local/etc/nginx/nginx.conf*
