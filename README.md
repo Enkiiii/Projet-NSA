@@ -3,6 +3,8 @@
 
 Projet consistant à créer un réseau virtualisé comprenant 4 machines dont un routeur / pare-feu / serveur DHCP et un serveur Web.
 
+![Schéma Projet](/Screen%20Projet%20R%C3%A9seau/Sch%C3%A9ma%20Projet%20NSA.png)
+
 
 ## Tech
 
@@ -161,6 +163,7 @@ employee-client	    > 1 Internal Network ( lan-3 )
     
     grep rcvar /usr/local/etc/rc.d/*
 ![Example commande rcvar](/Screen%20Projet%20R%C3%A9seau/Rcvar%20variables.png)
+
 Nginx : 
     
     sysrc nginx_enable=YES
@@ -248,11 +251,14 @@ Mysql :
 		Uncomment and adjust the "location ~\.php$ {}" part
 
 ![Location / php](/Screen%20Projet%20R%C3%A9seau/Server%20block.png)
+
 Restart le server :
 	    
         service nginx restart
+
 ## Authors
 
 - [@David Grondin](https://github.com/divatchyanoo)
 - [@Enki Fouque](https://github.com/Enkiiii)
+- [@Alain Victor](https://github.com/avictor22)
 
